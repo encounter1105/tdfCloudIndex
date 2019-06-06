@@ -54,9 +54,9 @@
       <div>
         <ul class="TraitList">
           <li v-for="traits in TdfTraits">
-            <span class="traitImg"><img :src="traits.traitImg" width="100%"></span>
-            <span class="traitName">{{ traits.traitName }}</span>
-            <span class="traitdetail"><p>{{ traits.traitDetail }}</p></span>
+            <div class="traitImg"><img :src="traits.traitImg" width="100%" style="margin:0 auto"></div>
+            <div class="traitName">{{ traits.traitName }}</div>
+            <p class="traitDetail-info">{{ traits.traitDetail }}</p>
           </li>
         </ul>
       </div>
@@ -76,34 +76,34 @@
        TdfTraits:[
          {
            traitId:1,
-           traitImg:"http://7xjyw1.com1.z0.glb.clouddn.com/pos001.jpg",
+           traitImg:"https://main.qcloudimg.com/raw/1378b32aabf62f4e972a28f4ed032b9d.svg",
            traitName:'拥抱开源社区',
            traitDetail:'拥抱Spring Cloud开源社区，提供高可用，可扩展、灵活的微服务社区技术支持，降低用户迁移到微服务的时间金额人力成本。'
          },{
            traitId:2,
-           traitImg:"http://7xjyw1.com1.z0.glb.clouddn.com/pos001.jpg",
-           traitName:'拥抱开源社区',
-           traitDetail:'拥抱Spring Cloud开源社区，提供高可用，可扩展、灵活的微服务社区技术支持，降低用户迁移到微服务的时间金额人力成本。'
+           traitImg:"https://main.qcloudimg.com/raw/8b7dd6ac083a7bf2d9fe3b70b7d0f64b.svg",
+           traitName:'应用全生命周期管理',
+           traitDetail:'提供从创建应用到运行应用的全生命周期管理，支持创建、部署、回滚、扩容、下线、启动和停止应用。提供虚拟机和容器两种部署方式，满足不同客户的使用需求。'
          },{
            traitId:3,
-           traitImg:"http://7xjyw1.com1.z0.glb.clouddn.com/pos001.jpg",
-           traitName:'拥抱开源社区',
-           traitDetail:'拥抱Spring Cloud开源社区，提供高可用，可扩展、灵活的微服务社区技术支持，降低用户迁移到微服务的时间金额人力成本。'
+           traitImg:"https://main.qcloudimg.com/raw/a6b1a76ea491c0dc21ab349608caa860.svg",
+           traitName:'细粒度服务治理',
+           traitDetail:'提供服务和 API 级别的服务治理能力，支持控制台上配置服务路由、服务限流、服务鉴权规则，支持分布式配置管理。'
          },{
            traitId:4,
-           traitImg:"http://7xjyw1.com1.z0.glb.clouddn.com/pos001.jpg",
-           traitName:'拥抱开源社区',
-           traitDetail:'拥抱Spring Cloud开源社区，提供高可用，可扩展、灵活的微服务社区技术支持，降低用户迁移到微服务的时间金额人力成本。'
+           traitImg:"https://main.qcloudimg.com/raw/8857e5092b02cef8e6037797b63f0b41.svg",
+           traitName:'分布式事务',
+           traitDetail:'集成了分布式事务能力，支持 TCC 模式分布式事务管理功能，解决跨数据库和跨服务的事务问题。 '
          },{
            traitId:5,
-           traitImg:"http://7xjyw1.com1.z0.glb.clouddn.com/pos001.jpg",
-           traitName:'拥抱开源社区',
-           traitDetail:'拥抱Spring Cloud开源社区，提供高可用，可扩展、灵活的微服务社区技术支持，降低用户迁移到微服务的时间金额人力成本。'
+           traitImg:"https://main.qcloudimg.com/raw/148b166efb6863a237123ff2e3c93c1e.svg",
+           traitName:'灵活运维',
+           traitDetail:'支持日志服务、调用链、服务依赖拓扑图、基于监控的弹性伸缩功能，满足不同纬度的运维需求。'
          },{
            traitId:6,
-           traitImg:"http://7xjyw1.com1.z0.glb.clouddn.com/pos001.jpg",
-           traitName:'拥抱开源社区',
-           traitDetail:'拥抱Spring Cloud开源社区，提供高可用，可扩展、灵活的微服务社区技术支持，降低用户迁移到微服务的时间金额人力成本。'
+           traitImg:"https://main.qcloudimg.com/raw/5bfe15ea0247fc497989246d9af8d16b.svg",
+           traitName:'跨可用区高可用',
+           traitDetail:'支持同城跨可用区容灾和就近路由，规避单可用区可能存在的不可抗力风险，提高服务的高可用性和容灾能力。'
          }
        ]
      }
@@ -122,7 +122,7 @@
 .banner{
   /*background-color: red;*/
   height:300px;
-  width:50%;
+  width:55%;
   padding-top:1px;
   float:left;
 }
@@ -130,7 +130,7 @@
   height:60px;
   /*background-color: aliceblue;*/
   margin-top:80px;
-  margin-left:80px;
+  margin-left:100px;
   font-size:30px;
   color:#fff;
   font-family: 'Microsoft YaHei';
@@ -142,7 +142,7 @@
   color:#fff;
   /*background-color: aliceblue;*/
   margin-top:5px;
-  margin-left:80px;
+  margin-left:100px;
   font-size:15px;
   display:block;
   /*float:left;*/
@@ -151,13 +151,13 @@
   height:40px;
   background-color: aliceblue;
   margin-top:5px;
-  margin-left:80px;
+  margin-left:100px;
   display:inline-block;
 }
 .indexPic{
   /*background-color:green;*/
   height:300px;
-  width:50%;
+  width:45%;
   margin-top:15px;
   /*overflow: hidden;*/
   display:inline-block;
@@ -179,31 +179,41 @@
 .TraitList li{
   list-style: none;
   width:28%;
-  border:1px solid #E5E9F2;
-  height: auto;
+  border:1px #E5E9F2;
+  height: 180px;
   overflow: hidden;
   background-color:#fff;
   padding: 10px;
   float:left;
   margin: 20px 15px;
+  position:relative;
 }
 .TraitList li span{
   display: block;
   float:left;
 }
 .traitImg{
-  width: 50%;
+  width: 60px;
+  height:60px;
+  text-align: center;
+  margin:0 auto;
 }
 .traitName{
-  font-size: 18px;
-  padding-left: 10px;
-  color:black;
-
-}
-.traitDetail{
+  overflow: hidden;
+  text-align: center;
   font-size: 16px;
   padding-left: 10px;
+  color:black;
   padding-top:10px;
+}
+.traitDetail-info{
+  font-size: 14px;
+  color:#666;
+  margin-top:10px;
+  line-height:1.7;
+  word-wrap:break-word;
+  /*padding-left: 10px;*/
+  /*padding-top:10px;*/
 }
 .index-footer{
   clear:both;

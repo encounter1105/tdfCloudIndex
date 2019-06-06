@@ -15,7 +15,7 @@
       <!--</div>-->
     </div>
     <div class="indexPic">
-      <img src="http://tech.taiji.com.cn/community/openSourceProjDetail?linkid=0bbc52dbc151419d866e0c89b5baa253" alt="TDF cloud">
+      <img src="../../../src/assets/tdfCloud.png" alt="TDF cloud">
     </div>
     <div class="index">
       <div>
@@ -61,9 +61,9 @@
         </ul>
       </div>
     </div>
-    <div class="indexBottom">
-
-
+    <div class="index-footer">
+      <div class="slide1">COPYRIGHT @ 2018 太极计算机股份有限公司</div>
+      <div class="slide2">POWERED BY INNOVATION AND RESEARCH INSTITUTE</div>
     </div>
   </div>
 </template>
@@ -108,53 +108,59 @@
        ]
      }
    }
-
-
-
-    }
+}
 </script>
 
 <style scoped>
 .TDFCloudIndex{
+  background-color: black;
+  height:300px;
+  width:100%;
   margin:0;
   padding:0;
 }
 .banner{
-  background-color: black;
+  /*background-color: red;*/
   height:300px;
-  weight:100%;
+  width:50%;
   padding-top:1px;
+  float:left;
 }
 .div1{
   height:60px;
-  background-color: aliceblue;
-  margin-top:100px;
-  margin-left:70px;
+  /*background-color: aliceblue;*/
+  margin-top:80px;
+  margin-left:80px;
   font-size:30px;
+  color:#fff;
   font-family: 'Microsoft YaHei';
-  display:block;
+  display:inline-block;
 }
 .div2{
   height:40px;
-  background-color: aliceblue;
+  width:500px;
+  color:#fff;
+  /*background-color: aliceblue;*/
   margin-top:5px;
-  margin-left:70px;
+  margin-left:80px;
   font-size:15px;
   display:block;
+  /*float:left;*/
 }
 .button{
   height:40px;
   background-color: aliceblue;
   margin-top:5px;
-  margin-left:70px;
-  display:block;
+  margin-left:80px;
+  display:inline-block;
 }
 .indexPic{
-  background-color: red;
-  height:40px;
-  weight:100%;
-  overflow: hidden;
-  float:left;
+  /*background-color:green;*/
+  height:300px;
+  width:50%;
+  margin-top:15px;
+  /*overflow: hidden;*/
+  display:inline-block;
 }
 .el-tabs__header{
   background-color: blueviolet;
@@ -191,7 +197,7 @@
 .traitName{
   font-size: 18px;
   padding-left: 10px;
-  color:brown;
+  color:black;
 
 }
 .traitDetail{
@@ -199,30 +205,20 @@
   padding-left: 10px;
   padding-top:10px;
 }
-.indexBottom{
+.index-footer{
+  clear:both;
   background-color: black;
   height:168px;
   weight:100%;
+  font: bold 12px/20px sans-serif;
 }
-/*.span-font{*/
-  /*color: red;*/
-  /*font-family: 'Microsoft YaHei';*/
-  /*font-size:30px;*/
-  /*top:65px; right:190px; bottom:20px; left:70px;*/
-  /*position: absolute;*/
-/*}*/
-/*.span-font2{*/
-  /*color: #fff;*/
-  /*font-size:15px;*/
-  /*top:130px; right:190px; bottom:40px; left:70px;*/
-  /*position: absolute;*/
-/*}*/
-/*.button{*/
-  /*top:190px; right:190px; bottom:40px; left:70px;*/
-  /*position: absolute;*/
-/*}*/
-/*.img{*/
-  /*position: absolute;*/
-  /*top:20px; right:50px; bottom:40px; left:800px;*/
-  /*}*/
+.slide1{
+  text-align:center;
+  padding-top:80px;
+  font-size:15px;
+}
+.slide2{
+  text-align:center;
+  font-size:15px;
+}
 </style>

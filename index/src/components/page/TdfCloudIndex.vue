@@ -5,7 +5,7 @@
            太极微服务开发框架TDF Cloud
        </div>
        <div class="div2">
-         简要的概括产品的定位、特性。
+         太极微服务架构（简称TDF-Cloud），是在太极开发框架TDF基础上，基于Spring Cloud系列产品搭建的微服务架构。
        </div>
        <div class="button">
          <el-button>开始使用</el-button>
@@ -15,14 +15,14 @@
       <!--</div>-->
     </div>
     <div class="indexPic">
-      <img src="../../../src/assets/tdfCloud.png" alt="TDF cloud">
+      <img src="../../../src/assets/test111.png"  alt="TDF cloud">
     </div>
     <div class="index">
       <div>
         <el-row>
           <el-col :span="24" class="indexNav">
             <el-tabs class="indexNav1">
-              <el-tab-pane label="产品概览">
+              <el-tab-pane label="产品概览" class="indexNav11">
                 <div class="content">
                   <h3 class="content_title">太极微服务平台 TDF Cloud简介</h3>
                   <p class="content_detail">太极微服务平台(TDF Cloud)是一个围绕应用和微服务的Paas平台，<br/>提供一站式应用全生命周期管理能力和数据化运营支持，提供多维<br/>度应用和服务的监控数据，助力服务性能优化，提供基于Spring <br/>Cloud的微服务架构的技术支持。</p>
@@ -113,9 +113,10 @@
 
 <style scoped>
 .TDFCloudIndex{
-  background-color: black;
+  background:#010030 repeat-x;
   height:300px;
   width:100%;
+  background-size:100%;
   margin:0;
   padding:0;
 }
@@ -130,7 +131,7 @@
   height:60px;
   /*background-color: aliceblue;*/
   margin-top:80px;
-  margin-left:100px;
+  margin-left:120px;
   font-size:30px;
   color:#fff;
   font-family: 'Microsoft YaHei';
@@ -142,7 +143,7 @@
   color:#fff;
   /*background-color: aliceblue;*/
   margin-top:5px;
-  margin-left:100px;
+  margin-left:120px;
   font-size:15px;
   display:block;
   /*float:left;*/
@@ -150,8 +151,8 @@
 .button{
   height:40px;
   background-color: aliceblue;
-  margin-top:5px;
-  margin-left:100px;
+  margin-top:20px;
+  margin-left:120px;
   display:inline-block;
 }
 .indexPic{
@@ -162,18 +163,19 @@
   /*overflow: hidden;*/
   display:inline-block;
 }
-.el-tabs__header{
-  background-color: blueviolet;
+indexNav11{
+  margin-left:100px;
 }
 .index{
   background-color: azure;
   padding-bottom:50px;
+  padding-left:60px;
 }
 .content_title{
-  margin-left:65px;
+  margin-left:30px;
 }
 .content_detail{
-  margin-left:65px;
+  margin-left:35px;
   weight:720px;
 }
 .TraitList li{
@@ -218,13 +220,13 @@
 .index-footer{
   clear:both;
   background-color: black;
-  height:168px;
+  height:80px;
   weight:100%;
   font: bold 12px/20px sans-serif;
 }
 .slide1{
   text-align:center;
-  padding-top:80px;
+  padding-top:30px;
   font-size:15px;
 }
 .slide2{
